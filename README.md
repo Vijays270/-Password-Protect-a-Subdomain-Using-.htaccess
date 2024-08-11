@@ -3,7 +3,9 @@
 # root@fawazpc:~# vi /etc/apache2/sites-available/fw.fawazpc.online.conf
 
 <VirtualHost *:80>
+
     ServerName fw.fawazpc.online
+    
     DocumentRoot /var/www/fw.fawazpc.online
 
     <Directory /var/www/fw.fawazpc.online>
