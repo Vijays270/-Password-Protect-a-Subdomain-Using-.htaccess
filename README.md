@@ -16,9 +16,7 @@ RewriteEngine on
 RewriteCond %{SERVER_NAME} =fw.fawazpc.online
 RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
 </VirtualHost>
-~
-~
-:wq!
+
 ## Create the Document Root Directory:
 root@fawazpc:~#  mkdir -p /var/www/fw.fawazpc.online
 
@@ -69,4 +67,6 @@ If you like Certbot, please consider supporting our work by:
 root@fawazpc:~#
 
 output:
-         
+        ![image](https://github.com/user-attachments/assets/147c4643-80b6-4f53-bab5-d2a17e2e3adc)
+
+
