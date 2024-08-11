@@ -19,11 +19,8 @@
     CustomLog ${APACHE_LOG_DIR}/fw.fawazpc.online-access.log combined
     
 RewriteEngine on
-
 RewriteCond %{SERVER_NAME} =fw.fawazpc.online
-
 RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
-
 </VirtualHost>
 
 
