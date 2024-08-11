@@ -3,21 +3,18 @@
 # root@fawazpc:~# vi /etc/apache2/sites-available/fw.fawazpc.online.conf
 
 <VirtualHost *:80>
-
     ServerName fw.fawazpc.online
-    
     DocumentRoot /var/www/fw.fawazpc.online
-
     <Directory /var/www/fw.fawazpc.online>
         AllowOverride All
     </Directory>
-
     ErrorLog ${APACHE_LOG_DIR}/fw.fawazpc.online-error.log
     CustomLog ${APACHE_LOG_DIR}/fw.fawazpc.online-access.log combined
 RewriteEngine on
 RewriteCond %{SERVER_NAME} =fw.fawazpc.online
 RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
 </VirtualHost>
+
 
 ## Create the Document Root Directory:
 root@fawazpc:~#  mkdir -p /var/www/fw.fawazpc.online
